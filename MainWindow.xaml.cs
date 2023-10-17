@@ -50,7 +50,6 @@ namespace WPF_APP_1
             inputTextBox.Text = currentInput;
             isEqualClicked = false;
         }
-
         private void HandleClear()
         {
             currentInput = string.Empty;
@@ -87,7 +86,6 @@ namespace WPF_APP_1
         {
             Button button = (Button)sender;
             string buttonText = button.Content.ToString();
-
             errorTextBlock.Visibility = Visibility.Collapsed;
             errorTextBlock.Text = string.Empty;
 
@@ -174,7 +172,6 @@ namespace WPF_APP_1
                     break;
             }
         }
-
         private void Calculate()
         {
             double currentValue = double.Parse(currentInput);
